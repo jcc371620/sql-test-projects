@@ -43,3 +43,15 @@ def test_is_good_word():
     
     # 3. 鲁棒性/大小写 (Robustness)
     assert is_good_word("Dduuz Zhuuayyuu") == True # 混合大小写和空格的处理
+
+2.假设供应链系统返回了一个包含多本书籍信息的列表。请写一个 Python 函数，计算这批书籍中“品相为 A”的书籍总回收价。
+数据示例：books = [{"title": "书A", "quality": "A", "price": 50}, {"title": "书B", "quality": "B", "price": 30}]
+解答参考：
+
+Python
+def get_total_price_for_quality_a(book_list):
+    # 使用列表推导式或循环
+    total = sum(book['price'] for book in book_list if book['quality'] == 'A')
+    return total
+
+# 这考查了你对 Python 基础语法和字典操作的熟练度
