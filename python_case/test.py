@@ -2,9 +2,7 @@
 
 def is_good_word(s):
     # 1. 统一转为小写
-    s = s.lower()
-    
-    # 2. 统计每个字母出现的次数
+    s = s.lower()出现的次数
     counts = Counter(s).values()
     
     # 3. 获取最大和最小次数
